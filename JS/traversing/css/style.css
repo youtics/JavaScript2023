@@ -1,0 +1,105 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Raleway', sans-serif;
+}
+
+*,*:after,*:before{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    background-color: #272822;
+}
+
+:root {
+    --shadow-color: 339deg 85% 33%;
+    --shadow-elevation-high:
+      0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
+      1.5px 2.9px 3.7px -0.4px hsl(var(--shadow-color) / 0.34),
+      2.7px 5.4px 6.8px -0.7px hsl(var(--shadow-color) / 0.34),
+      4.5px 8.9px 11.2px -1.1px hsl(var(--shadow-color) / 0.34),
+      7.1px 14.3px 18px -1.4px hsl(var(--shadow-color) / 0.34),
+      11.2px 22.3px 28.1px -1.8px hsl(var(--shadow-color) / 0.34),
+      17px 33.9px 42.7px -2.1px hsl(var(--shadow-color) / 0.34),
+      25px 50px 62.9px -2.5px hsl(var(--shadow-color) / 0.34);
+  }
+
+
+
+.header-principal{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-principal img{
+    max-width: 5rem;
+    height: auto;
+}
+
+.header-principal h2{
+    max-width: 15rem;
+    height: auto;
+    font-size: 1.1rem;
+    color: #f92760;
+}
+hr{
+    border: .5px solid rgb(212, 209, 209);
+}
+
+.menu a{
+    color: #a2e22e;
+    text-decoration: none;
+}
+
+/**Card*/
+
+.nuestros-cursos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 80%;
+}
+
+.nuestros-cursos article{
+    flex: 0 0 calc(33.3% - 1rem);
+}
+
+.nuestros-cursos article:hover{
+    box-shadow: var(--shadow-elevation-high);
+    cursor: pointer;
+}
+.nuestros-cursos h2{
+    color: #f92760;
+    font-size: 2rem;
+}
+
+.nuestros-cursos p{
+    color: #a2e22e;
+    text-align: justify;
+}
+
+.nuestros-cursos img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.nuestros-cursos div{
+    padding: 1rem;
+}
+
+.nuestros-cursos article img{
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+.nuestros-cursos article{
+    border-radius: .5rem;
+}
+
+.principal{
+    display: flex;
+    justify-content: center;
+}
